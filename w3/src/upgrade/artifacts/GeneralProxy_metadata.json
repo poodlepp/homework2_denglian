@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_implementation",
+						"type": "address"
+					}
+				],
+				"name": "upgradeTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/upgrade/UpgradeProxy.sol": "GeneralProxy"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/upgrade/UpgradeProxy.sol": {
+			"keccak256": "0x0de6e4b6bb656942eb3e12ba5a7c867c1d6628fa8946a00df9a372dc347f6920",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6fef7c34f8cf49201d461d41f4c03ef28d3256aa8d64fd2cbcf52eba1356bc6b",
+				"dweb:/ipfs/QmTBec216EaP1bevozjNL1zMWqWm7mpQhA3nc1zBZ1fnt2"
+			]
+		}
+	},
+	"version": 1
+}

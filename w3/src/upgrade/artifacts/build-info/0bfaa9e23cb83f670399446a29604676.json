@@ -1,0 +1,72 @@
+{
+	"id": "0bfaa9e23cb83f670399446a29604676",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.25",
+	"solcLongVersion": "0.8.25+commit.b61c2a91",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"src/upgrade/ProxyAdmin.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n\r\n// pragma solidity ^0.8.25;\r\n\r\n// import {TransparentUpgradeableProxy} from \"@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol\";\r\n\r\n// contract ProxyAdmin is Ownable, TransparentUpgradeableProxy {\r\n//     constructor(address _logic, address _admin) TransparentUpgradeableProxy(_logic, _admin) {}\r\n\r\n//     function upgradeTo(address newImplementation) public onlyOwner {\r\n//         _upgradeTo(newImplementation);\r\n//         // emit Upgraded(newImplementation);\r\n//     }\r\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.25;\"\n--> src/upgrade/ProxyAdmin.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.25;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "src/upgrade/ProxyAdmin.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"src/upgrade/ProxyAdmin.sol": {
+				"ast": {
+					"absolutePath": "src/upgrade/ProxyAdmin.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "537:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
