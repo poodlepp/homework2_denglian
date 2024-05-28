@@ -12,6 +12,9 @@ contract MyERC20V1 is ERC20Upgradeable{
         _mint(msg.sender, 1000000 * 10 ** uint256(decimals()));
     }
     
+    function mint(address to, uint256 amount) public {
+        _mint(to, amount);
+    }
 }
 
 contract sig {
@@ -29,6 +32,10 @@ contract MyERC20V2 is ERC20Upgradeable{
     error MyERC20V2__TokenTransferFailed();
     // function initialize() external initializer {
     // }
+
+    function mint(address to, uint256 amount) public {
+        _mint(to, amount);
+    }
 
     function transferWithCallback(address to, uint256 amount) public payable returns (bool success) {
          _transfer(msg.sender, to, amount);

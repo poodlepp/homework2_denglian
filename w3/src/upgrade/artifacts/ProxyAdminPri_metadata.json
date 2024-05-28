@@ -16,6 +16,11 @@
 						"internalType": "address",
 						"name": "_admin",
 						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -159,7 +164,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"src/upgrade/ProxyAdmin.sol": "ProxyAdmin"
+			"src/upgrade/ProxyAdmin.sol": "ProxyAdminPri"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -262,11 +267,11 @@
 			]
 		},
 		"src/upgrade/ProxyAdmin.sol": {
-			"keccak256": "0x3c145f6e387ed9b095f6dd0e72bb327ad6f8eb5e592d9763b7cbaf94dc7f1950",
+			"keccak256": "0x8d7d6cac15e7ff45b393d2c84567fc203706dc08341535c2877406c0c45abffc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8ac46d1a23471206ca1d0486d7732689cc43bf1d4d3c4e5b7b89fcfca399f32d",
-				"dweb:/ipfs/QmRSK9Y8ggidRZCHU4rTiSHVfV1H4zPEdkdngxjaFQjzWD"
+				"bzz-raw://dca5f040166572f2fd85fe9bfa9d626781d73f42fe534d616426669d1cae961a",
+				"dweb:/ipfs/QmU1y63uuVZjiqtdzKTkNygJs2rMUwu5AHFq5EtBCbG8An"
 			]
 		}
 	},

@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "ss",
+						"type": "string"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "rs",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "a",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "b",
+						"type": "string"
+					}
+				],
+				"name": "concatenateStrings",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "str",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/upgrade/ContractParent.sol": "ContractParent"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/upgrade/ContractParent.sol": {
+			"keccak256": "0x3b95da05787dfebaf369623dcaf133248e46029a9a05a51d77e1b28e41385f8f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a46894a96b54f4fffe6a0b86b50df78dfd2674f348c343c3d144720fe8aed13f",
+				"dweb:/ipfs/QmYiP5XCnAaTpNdhEwhigS7FMVDeneRaYwL7kNwD71f7BP"
+			]
+		}
+	},
+	"version": 1
+}

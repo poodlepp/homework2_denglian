@@ -3,8 +3,8 @@
 pragma solidity ^0.8.25;
 
 import {BaseScript} from "./BaseScript.s.sol";
-import {MyERC20} from "../src/Pengyi.sol";
-import {Vault} from "../src/Vault.sol";
+import {MyERC20} from "../src/erc20/Pengyi.sol";
+import {Vault} from "../src/erc20/Vault.sol";
 
 
 contract DeployVault is BaseScript {

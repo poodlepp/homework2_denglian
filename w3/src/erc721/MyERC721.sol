@@ -13,7 +13,7 @@ contract MyERC721 is ERC721URIStorage, Counter {
     constructor() ERC721(unicode"我的名字", "PENGYI") {}
 
     function mint(address student, string memory tokenURI) public returns (uint256) {
-        uint256 newItemId = number;
+        uint256 newItemId = counter;
         _mint(student, newItemId);
         _setTokenURI(newItemId, tokenURI);
         increment();

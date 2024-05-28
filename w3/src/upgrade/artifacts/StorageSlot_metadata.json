@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"src/upgrade/UpgradeProxy.sol": {
-			"keccak256": "0x0de6e4b6bb656942eb3e12ba5a7c867c1d6628fa8946a00df9a372dc347f6920",
+			"keccak256": "0xf5d708427443306473675657fc13567f80def96a1863bb0cf7c569820f6c9e91",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6fef7c34f8cf49201d461d41f4c03ef28d3256aa8d64fd2cbcf52eba1356bc6b",
-				"dweb:/ipfs/QmTBec216EaP1bevozjNL1zMWqWm7mpQhA3nc1zBZ1fnt2"
+				"bzz-raw://e087303bc928f475a01e873b8d583c704c9700ea2a48798ec8e0870a65bc9c17",
+				"dweb:/ipfs/QmfTxbnz41bBGcmVDYyCCLc7FLLEGknqo97HV6WVJ5km1u"
 			]
 		}
 	},
