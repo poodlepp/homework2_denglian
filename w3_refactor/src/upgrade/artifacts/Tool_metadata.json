@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/upgrade/Tool.sol": "Tool"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/upgrade/Tool.sol": {
+			"keccak256": "0x1f1cc0aa3a2f6d9b6f972535ded257aaef6f673356f4fe33f660b94c5c2d4157",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://55e4afa985ddb0d3191594a48c08130a975ee287b520b03e9d8a938423410d3d",
+				"dweb:/ipfs/Qmda7uRaBLpmppev57VYMTtvfvXkAYPPp1FR3s1XKKSGNr"
+			]
+		}
+	},
+	"version": 1
+}
