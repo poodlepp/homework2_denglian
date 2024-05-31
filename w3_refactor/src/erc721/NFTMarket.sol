@@ -54,7 +54,7 @@ contract NFTMarket is IERC721Receiver {
         address from,
         uint256 tokenId,
         bytes calldata data
-    ) external returns (bytes4) {
+    ) external pure returns (bytes4) {
         // if(operator != nft) {
         //     revert NFTMarket__TokenIsNotExpected();
         // }

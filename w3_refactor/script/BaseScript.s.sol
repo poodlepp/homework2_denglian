@@ -5,13 +5,19 @@ import "forge-std/Script.sol";
 
 abstract contract BaseScript is Script {
 
-    address internal deployer;
-    string internal mnemonic;
+  /**
+   * @dev 使用助记词的方式
+   * string internal mnemonic = vm.envString("MNEMONIC");;
+   * address internal deployer;
+   * uint256 internal privateKey;
+   * (deployer, privateKey) = deriveRememberKey(mnemonic, 0);
+   * vm.startBroadcast(deployer);
+   */
+
+    uint256 internal privateKey;
 
     function setUp() public virtual {
-        mnemonic = vm.envString("MNEMONIC");
-        (deployer, ) = deriveRememberKey(mnemonic, 0);
-      // uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+      privateKey = vm.envUint("PRIVATE_KEY");
     }
 
     function saveContract(string memory network, string memory name, address addr) public {
@@ -22,7 +28,7 @@ abstract contract BaseScript is Script {
     }
 
     modifier broadcaster() {
-        vm.startBroadcast(deployer);
+        vm.startBroadcast(privateKey);
         _;
         vm.stopBroadcast();
     }

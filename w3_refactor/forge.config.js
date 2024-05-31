@@ -1,0 +1,3 @@
+compiler: {
+    evmVersion: "berlin"
+}
