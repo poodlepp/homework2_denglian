@@ -3,4 +3,17 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+remappings = [
+    'forge-std=/Users/lipengyi/sol/libs/forge-std/src',
+    '@openzeppelin/contracts=/Users/lipengyi/sol/libs/openzeppelin-contracts/contracts',
+    '@openzeppelin/contracts-upgradeable=/Users/lipengyi/sol/libs/openzeppelin-contracts-upgradeable/contracts',
+]
+
+evm_version = "cancun"
+fs_permissions = [{ access = "read-write", path = "./output"}]
+
+[rpc_endpoints]
+sepolia = "https://eth-sepolia.g.alchemy.com/v2/tDueggKqOUmeeBuLCCQhpvnWnhnsI3pn"
+
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
