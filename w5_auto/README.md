@@ -1,66 +1,15 @@
-## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+forge clean && forge build && forge test --ffi
 
-Foundry consists of:
+forge script --fork-url http://localhost:8545 script/DeployVault.s.sol  --broadcast
+forge script --fork-url $RPC_URL    --broadcast --verify --etherscan-api-key $ETHERSCAN_API_KEY -vvvv script/DeployVault.s.sol
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+脚本中已经设置了startBoard 所以命令里面应该不需要加
+--private-key $PRIVATE_KEY
 
-## Documentation
 
-https://book.getfoundry.sh/
+forge inspect src/erc20/Pengyi.sol:MyERC20 abi >> MyERC20.json
 
-## Usage
 
-### Build
+remixd -s /Users/lipengyi/sol/denglian2/homework2_denglian/w5_auto -u https://remix.ethereum.org
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```

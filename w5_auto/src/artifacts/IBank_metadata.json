@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "collect",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/AutoCollectUpKeep.sol": "IBank"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xc6a8ff0ea489379b61faa647490411b80102578440ab9d84e9a957cc12164e70",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0ea104e577e63faea3b69c415637e99e755dcbf64c5833d7140c35a714d6d90c",
+				"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq"
+			]
+		},
+		"src/AutoCollectUpKeep.sol": {
+			"keccak256": "0xc6939455b6578aa60b11a482606a0403b80e8d405e58beadb32844aebe487c5b",
+			"urls": [
+				"bzz-raw://ef38f2032641776c7cc7c817d0dc1d1633beb5f5530b5c815e367361a34ddd46",
+				"dweb:/ipfs/QmUBKBqng5HAp3HUx5u8GeK6WNv4nxAo9CBeAf8EssM3Gn"
+			]
+		},
+		"src/automation/AutomationBase.sol": {
+			"keccak256": "0x5d78f0751d8c5d932f03c906ee1667619d2bb010d8d8411ddd91221816c01918",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d8aff4bd30528ca7ee610ba941f1887e80f7a5cc2e13292b641e37781fb78dd",
+				"dweb:/ipfs/Qmc328bcmxWykaAZWDtWNFKJDLka8NLyUev259hMUcfaos"
+			]
+		},
+		"src/automation/AutomationCompatible.sol": {
+			"keccak256": "0x4b0be178174348feb14489c64ba2b1c50a1e7da6189c196c94fa728360f42a65",
+			"urls": [
+				"bzz-raw://fd306cab2443e7c2da03a5eb5cbfd26c4f358e942394c9ea0d7c78c9616626a2",
+				"dweb:/ipfs/QmSm5NMYWzMD2vXRHDjziz9HmnHxsapNVQwhsh5kwWmvJ5"
+			]
+		},
+		"src/automation/AutomationCompatibleInterface.sol": {
+			"keccak256": "0x9ffdd3353be8a612bd95f5ffb8dcab21d0eef54e3c6b4c0638e0d309502a2746",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://296a33ee6c5c9c919a3f09da97ac98cf415d6ec33f9b871e30b70bddba44acde",
+				"dweb:/ipfs/QmPtFVFhVPw4xqVRHgvdE8qXjw9WVSPf7j77Cr1ib7UqAG"
+			]
+		}
+	},
+	"version": 1
+}

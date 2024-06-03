@@ -1,4 +1,4 @@
-const {ethers} = require("ethers");
+const {ethers} = require('ethers');
 
 const ERC20ABI = require(`../deployments/abi/ERC2612.json`);
 const ERC20Addr = require(`../deployments/dev/ERC2612.json`);
@@ -8,11 +8,11 @@ async function parseTransferEvent(event) {
     let decodeData = TransferEvent.parseLog(event);
     console.log("from:" + decodeData.args.from);
     console.log("tp:" + decodeData.args.to);
-    console.log("value:" + decodeData.args.value).toString();
+    console.log("value:" + decodeData.args.value.toString());
 }
 
 async function main() {
-    const provider = new ethers.privides.JsonRpcProvider("http:localhost:8545");
+    const provider = new ethers.providers.JsonRpcProvider("http://localhost:8545");
     let myerc20 = new ethers.Contract(ERC20Addr.address, ERC20ABI, provider);
     let filter = myerc20.filters.Transfer();
     filter.fromBlock = 1;
