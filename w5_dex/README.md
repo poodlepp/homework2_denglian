@@ -9,3 +9,8 @@ forge verify-contract --rpc-url $RPC_URL --constructor-args $(cast abi-encode "c
 remixd -s /Users/lipengyi/sol/denglian2/homework2_denglian/w5_dex -u https://remix.ethereum.org
 
 
+foundry 只能尝试remix部署uniswapv2;
+deploy/test 行不通，因为版本太老了；
+foundry的script等最低都要0.6+    uniswapV2 factory  还是0.5
+
+remix部署最后一步报错   payable and balance must better  

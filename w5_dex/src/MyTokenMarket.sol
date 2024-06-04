@@ -1,10 +1,9 @@
 //SPDX-License-Identifier: Unlicense
-pragma solidity ^0.6.2;
+pragma solidity ^0.8.0;
 
 import "./IUniswapV2Router01.sol";
 import "./IMasterChef.sol";
 
-// import {IUniswapV2Router02} from "@v2-periphery/interfaces/IUniswapV2Router02.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
