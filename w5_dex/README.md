@@ -1,66 +1,9 @@
-## Foundry
+forge clean && forge build && forge test --ffi
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+forge script --fork-url http://localhost:8545 script/DeployVault.s.sol  --broadcast
+forge script --fork-url $RPC_URL --private-key $PRIVATE_KEY script/DeployVault.s.sol --broadcast --verify -vvvv
 
-Foundry consists of:
+forge verify-contract --rpc-url $RPC_URL 0x61731e0630548e7aD0b8cCeE9e015548Bb987a89 src/ERC2612.sol:ERC2612 --watch --flatten
+forge verify-contract --rpc-url $RPC_URL --constructor-args $(cast abi-encode "constructor(address)" 0x61731e0630548e7aD0b8cCeE9e015548Bb987a89) 0xEb61908872BDcf05fa2d4D089eB70F749d84BE9b src/Bank.sol:Bank --watch --flatten
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+remixd -s /Users/lipengyi/sol/denglian2/homework2_denglian/w5_dex -u https://remix.ethereum.org
