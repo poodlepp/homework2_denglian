@@ -13,3 +13,6 @@
 [submodule "w4_teach/sol/lib/forge-std"]
 	path = w4_teach/sol/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "w5_dex/lib/forge-std"]
+	path = w5_dex/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
