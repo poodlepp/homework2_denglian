@@ -7,3 +7,5 @@ forge verify-contract --rpc-url $RPC_URL 0x61731e0630548e7aD0b8cCeE9e015548Bb987
 forge verify-contract --rpc-url $RPC_URL --constructor-args $(cast abi-encode "constructor(address)" 0x61731e0630548e7aD0b8cCeE9e015548Bb987a89) 0xEb61908872BDcf05fa2d4D089eB70F749d84BE9b src/Bank.sol:Bank --watch --flatten
 
 remixd -s /Users/lipengyi/sol/denglian2/homework2_denglian/w5_dex -u https://remix.ethereum.org
+
+
